@@ -1,12 +1,13 @@
-//
-//  main.swift
-//  Projet P3
-//
-//  Created by Anthony TUFFERY on 19/11/2020.
-//
+// Test du code
+home()
+rules()
+
 print("tu t'appelle comment ?")
 
-if let nomDuJoueur = readLine() {
-    print("je m'appelle" \(nomDuJoueur) )
-thrall.name = "bonjour"
-print(thrall.name)
+if let réponse = readLine() {
+    print(" Je m'appelle \(réponse) !")
+
+    thrall.name = réponse
+}
+
+// Fin test du code

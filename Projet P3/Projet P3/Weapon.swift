@@ -49,6 +49,8 @@ class Axe: Weapon {
     }
 }
 
+//Instances des Classes
+
 var staff = Staff()
 var dagger = Dagger()
 var axe = Axe()

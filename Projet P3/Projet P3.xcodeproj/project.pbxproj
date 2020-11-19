@@ -11,6 +11,7 @@
 		8914D76E2566871A008FA81A /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8914D76D2566871A008FA81A /* Character.swift */; };
 		8914D77525668EF0008FA81A /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8914D77425668EF0008FA81A /* Weapon.swift */; };
 		8914D77825669EDE008FA81A /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8914D77725669EDE008FA81A /* Race.swift */; };
+		8914D77B2566B88C008FA81A /* Game's Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8914D77A2566B88C008FA81A /* Game's Elements.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		8914D76D2566871A008FA81A /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		8914D77425668EF0008FA81A /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 		8914D77725669EDE008FA81A /* Race.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
+		8914D77A2566B88C008FA81A /* Game's Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Game's Elements.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				8914D765256684C0008FA81A /* main.swift */,
+				8914D77A2566B88C008FA81A /* Game's Elements.swift */,
 				8914D76D2566871A008FA81A /* Character.swift */,
 				8914D77425668EF0008FA81A /* Weapon.swift */,
 				8914D77725669EDE008FA81A /* Race.swift */,
@@ -132,6 +135,7 @@
 				8914D766256684C0008FA81A /* main.swift in Sources */,
 				8914D76E2566871A008FA81A /* Character.swift in Sources */,
 				8914D77525668EF0008FA81A /* Weapon.swift in Sources */,
+				8914D77B2566B88C008FA81A /* Game's Elements.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

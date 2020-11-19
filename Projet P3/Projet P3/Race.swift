@@ -44,6 +44,8 @@ class Tauren: Race {
     }
 }
 
+//Instance des Classes
+
 var orc = Orc()
 var nightElf = NightElf()
 var tauren = Tauren()
