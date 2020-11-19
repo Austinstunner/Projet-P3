@@ -55,13 +55,9 @@ class Thrall : Character {
             print("You have \(life) PV left ! ")
         }
     override func healing()  {
-        let thrallLife: Int = thrall.life
-        let healing: Int = staff.heal
-        thrallLife + healing
+        self.life = self.life + staff.heal
         }
     override func powerDamage() {
-        
-            
         }
 }
 
@@ -114,8 +110,10 @@ class Bain : Character {
 
 // Instances des Classes
 
-var thrall = Thrall()
-var sylvanas = Sylvanas()
-var bain = Bain ()
+var p1Thrall = Thrall()
+var p1Sylvanas = Sylvanas()
+var p1Bain = Bain()
 
-
+var p2Thrall = Thrall()
+var p2Sylvanas = Sylvanas()
+var p2Bain = Bain()
