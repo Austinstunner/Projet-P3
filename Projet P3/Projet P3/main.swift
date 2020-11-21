@@ -1,2 +1,2 @@
+print(entrance)
 
-print(ler.weapon.name)
