@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8902BA5D256A887100F9B636 /* Sora.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA5C256A887100F9B636 /* Sora.swift */; };
+		8902BA60256A888400F9B636 /* Donald.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA5F256A888400F9B636 /* Donald.swift */; };
+		8902BA63256A888F00F9B636 /* Dingo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA62256A888F00F9B636 /* Dingo.swift */; };
+		8902BA67256A8BFF00F9B636 /* Ultima.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA66256A8BFF00F9B636 /* Ultima.swift */; };
+		8902BA6A256A8CE100F9B636 /* Royal Wand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA69256A8CE100F9B636 /* Royal Wand.swift */; };
+		8902BA6D256A8D4A00F9B636 /* Royal Shield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA6C256A8D4A00F9B636 /* Royal Shield.swift */; };
+		8902BA70256A8FC300F9B636 /* Xehanort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA6F256A8FC300F9B636 /* Xehanort.swift */; };
+		8902BA73256A917900F9B636 /* Scrutatrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA72256A917900F9B636 /* Scrutatrice.swift */; };
+		8902BA77256A91EA00F9B636 /* Nescient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA76256A91EA00F9B636 /* Nescient.swift */; };
+		8902BA7A256A92DE00F9B636 /* Claw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA79256A92DE00F9B636 /* Claw.swift */; };
 		8914D766256684C0008FA81A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8914D765256684C0008FA81A /* main.swift */; };
 		8914D76E2566871A008FA81A /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8914D76D2566871A008FA81A /* Character.swift */; };
 		8914D77525668EF0008FA81A /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8914D77425668EF0008FA81A /* Weapon.swift */; };
-		8914D77B2566B88C008FA81A /* Game's Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8914D77A2566B88C008FA81A /* Game's Elements.swift */; };
 		89B332BD25673D7200681BDF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B332BC25673D7200681BDF /* Game.swift */; };
 		89B332C025673D8E00681BDF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B332BF25673D8E00681BDF /* Player.swift */; };
+		89FBC03D256AA7C600CA4097 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FBC03C256AA7C600CA4097 /* Menu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,13 +38,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8902BA5C256A887100F9B636 /* Sora.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sora.swift; sourceTree = "<group>"; };
+		8902BA5F256A888400F9B636 /* Donald.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donald.swift; sourceTree = "<group>"; };
+		8902BA62256A888F00F9B636 /* Dingo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dingo.swift; sourceTree = "<group>"; };
+		8902BA66256A8BFF00F9B636 /* Ultima.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ultima.swift; sourceTree = "<group>"; };
+		8902BA69256A8CE100F9B636 /* Royal Wand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Royal Wand.swift"; sourceTree = "<group>"; };
+		8902BA6C256A8D4A00F9B636 /* Royal Shield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Royal Shield.swift"; sourceTree = "<group>"; };
+		8902BA6F256A8FC300F9B636 /* Xehanort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xehanort.swift; sourceTree = "<group>"; };
+		8902BA72256A917900F9B636 /* Scrutatrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scrutatrice.swift; sourceTree = "<group>"; };
+		8902BA76256A91EA00F9B636 /* Nescient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nescient.swift; sourceTree = "<group>"; };
+		8902BA79256A92DE00F9B636 /* Claw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Claw.swift; sourceTree = "<group>"; };
 		8914D762256684C0008FA81A /* Projet P3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Projet P3"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8914D765256684C0008FA81A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		8914D76D2566871A008FA81A /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		8914D77425668EF0008FA81A /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
-		8914D77A2566B88C008FA81A /* Game's Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Game's Elements.swift"; sourceTree = "<group>"; };
 		89B332BC25673D7200681BDF /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		89B332BF25673D8E00681BDF /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		89FBC03C256AA7C600CA4097 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +68,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8902BA59256A87D100F9B636 /* Weapons */ = {
+			isa = PBXGroup;
+			children = (
+				8914D77425668EF0008FA81A /* Weapon.swift */,
+				8902BA66256A8BFF00F9B636 /* Ultima.swift */,
+				8902BA69256A8CE100F9B636 /* Royal Wand.swift */,
+				8902BA6C256A8D4A00F9B636 /* Royal Shield.swift */,
+				8902BA72256A917900F9B636 /* Scrutatrice.swift */,
+				8902BA79256A92DE00F9B636 /* Claw.swift */,
+			);
+			path = Weapons;
+			sourceTree = "<group>";
+		};
+		8902BA5A256A87E000F9B636 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				8914D76D2566871A008FA81A /* Character.swift */,
+				8902BA5C256A887100F9B636 /* Sora.swift */,
+				8902BA5F256A888400F9B636 /* Donald.swift */,
+				8902BA62256A888F00F9B636 /* Dingo.swift */,
+				8902BA6F256A8FC300F9B636 /* Xehanort.swift */,
+				8902BA76256A91EA00F9B636 /* Nescient.swift */,
+			);
+			path = Characters;
+			sourceTree = "<group>";
+		};
 		8914D759256684C0008FA81A = {
 			isa = PBXGroup;
 			children = (
@@ -68,11 +114,11 @@
 			isa = PBXGroup;
 			children = (
 				8914D765256684C0008FA81A /* main.swift */,
-				8914D76D2566871A008FA81A /* Character.swift */,
-				8914D77425668EF0008FA81A /* Weapon.swift */,
 				89B332BC25673D7200681BDF /* Game.swift */,
+				89FBC03C256AA7C600CA4097 /* Menu.swift */,
 				89B332BF25673D8E00681BDF /* Player.swift */,
-				8914D77A2566B88C008FA81A /* Game's Elements.swift */,
+				8902BA59256A87D100F9B636 /* Weapons */,
+				8902BA5A256A87E000F9B636 /* Characters */,
 			);
 			path = "Projet P3";
 			sourceTree = "<group>";
@@ -135,11 +181,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				8914D766256684C0008FA81A /* main.swift in Sources */,
+				8902BA6A256A8CE100F9B636 /* Royal Wand.swift in Sources */,
+				8902BA63256A888F00F9B636 /* Dingo.swift in Sources */,
+				8902BA60256A888400F9B636 /* Donald.swift in Sources */,
+				8902BA67256A8BFF00F9B636 /* Ultima.swift in Sources */,
 				89B332BD25673D7200681BDF /* Game.swift in Sources */,
 				8914D76E2566871A008FA81A /* Character.swift in Sources */,
 				8914D77525668EF0008FA81A /* Weapon.swift in Sources */,
 				89B332C025673D8E00681BDF /* Player.swift in Sources */,
-				8914D77B2566B88C008FA81A /* Game's Elements.swift in Sources */,
+				8902BA6D256A8D4A00F9B636 /* Royal Shield.swift in Sources */,
+				89FBC03D256AA7C600CA4097 /* Menu.swift in Sources */,
+				8902BA5D256A887100F9B636 /* Sora.swift in Sources */,
+				8902BA7A256A92DE00F9B636 /* Claw.swift in Sources */,
+				8902BA70256A8FC300F9B636 /* Xehanort.swift in Sources */,
+				8902BA77256A91EA00F9B636 /* Nescient.swift in Sources */,
+				8902BA73256A917900F9B636 /* Scrutatrice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
