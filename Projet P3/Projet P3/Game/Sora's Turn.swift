@@ -71,7 +71,7 @@ func soraHealing() {
     if let choise = readLine() {
         switch choise {
         case "1":
-            player1.side.sora.life += player1.side.sora.heal
+            goodSide.side.sora.life += player1.side.sora.heal
             print("\(player1.side.sora.name) heals himself with his \(player1.side.sora.weapon.type), he recovers \(player1.side.sora.heal) HP !")
         case "2":
             player1.side.donald.life += player1.side.sora.heal

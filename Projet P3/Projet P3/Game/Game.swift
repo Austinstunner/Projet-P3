@@ -5,26 +5,44 @@
 //  Created by Anthony TUFFERY on 22/11/2020.
 //
 
+/*
+ CORRIGER TOUTE LA BRANCHE GAME : REMPLACER player1 PAR goodSide ET player2 PAR badSide
+ */
+
+
+
+
+
+
+
+
+
+
 //------------------------------------------------------------------------------------------------\\
-//------------------------------------------TOUR DU JOUEUR 1\\-------------------------------------\\
+//------------------------------------------TOUR DES JOUEURS---------------------------------------\\
 //--------------------------------------------------------------------------------------------------\\
-func player1Turn() {
+
+
+func game() {
+    defineRound()
+    goodsideTurn()
+    badsideTurn()
+}
+
+// tour du coté good
+func goodsideTurn() {
     turnJ1Sora()
     turnJ1Donald()
     turnJ1Dingo()
+    round = round + 1
 }
-
-func player2Turn() {
-    
+//tour du coté bad
+func badsideTurn() {
+    turnJ2Xehanort()
+    turnJ2Nescient1()
+    turnJ2Nescient2()
+    round = round + 1
 }
-
-
-
-
-
-
-
-
 
 
 
