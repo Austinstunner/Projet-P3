@@ -20,9 +20,14 @@
 		8914D766256684C0008FA81A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8914D765256684C0008FA81A /* main.swift */; };
 		8914D76E2566871A008FA81A /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8914D76D2566871A008FA81A /* Character.swift */; };
 		8914D77525668EF0008FA81A /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8914D77425668EF0008FA81A /* Weapon.swift */; };
+		891B37F9256BF77A0057AB7E /* Side.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891B37F8256BF77A0057AB7E /* Side.swift */; };
+		89933FAA256DC91000EAB3BA /* Sora's Turn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89933FA9256DC91000EAB3BA /* Sora's Turn.swift */; };
+		89933FAE256DC98800EAB3BA /* Donald's Turn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89933FAD256DC98700EAB3BA /* Donald's Turn.swift */; };
+		89933FB1256DCCAC00EAB3BA /* Dingo's Turn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89933FB0256DCCAC00EAB3BA /* Dingo's Turn.swift */; };
 		89B332BD25673D7200681BDF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B332BC25673D7200681BDF /* Game.swift */; };
 		89B332C025673D8E00681BDF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B332BF25673D8E00681BDF /* Player.swift */; };
 		89FBC03D256AA7C600CA4097 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FBC03C256AA7C600CA4097 /* Menu.swift */; };
+		89FBC041256B155A00CA4097 /* Coffre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FBC040256B155A00CA4097 /* Coffre.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,9 +57,14 @@
 		8914D765256684C0008FA81A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		8914D76D2566871A008FA81A /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		8914D77425668EF0008FA81A /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
-		89B332BC25673D7200681BDF /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		891B37F8256BF77A0057AB7E /* Side.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Side.swift; sourceTree = "<group>"; };
+		89933FA9256DC91000EAB3BA /* Sora's Turn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sora's Turn.swift"; sourceTree = "<group>"; };
+		89933FAD256DC98700EAB3BA /* Donald's Turn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Donald's Turn.swift"; sourceTree = "<group>"; };
+		89933FB0256DCCAC00EAB3BA /* Dingo's Turn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dingo's Turn.swift"; sourceTree = "<group>"; };
+		89B332BC25673D7200681BDF /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		89B332BF25673D8E00681BDF /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		89FBC03C256AA7C600CA4097 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		89FBC040256B155A00CA4097 /* Coffre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffre.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,13 +124,26 @@
 			isa = PBXGroup;
 			children = (
 				8914D765256684C0008FA81A /* main.swift */,
-				89B332BC25673D7200681BDF /* Game.swift */,
 				89FBC03C256AA7C600CA4097 /* Menu.swift */,
 				89B332BF25673D8E00681BDF /* Player.swift */,
+				891B37F8256BF77A0057AB7E /* Side.swift */,
+				89FBC040256B155A00CA4097 /* Coffre.swift */,
+				89933FA8256DC80300EAB3BA /* Game */,
 				8902BA59256A87D100F9B636 /* Weapons */,
 				8902BA5A256A87E000F9B636 /* Characters */,
 			);
 			path = "Projet P3";
+			sourceTree = "<group>";
+		};
+		89933FA8256DC80300EAB3BA /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				89B332BC25673D7200681BDF /* Game.swift */,
+				89933FA9256DC91000EAB3BA /* Sora's Turn.swift */,
+				89933FAD256DC98700EAB3BA /* Donald's Turn.swift */,
+				89933FB0256DCCAC00EAB3BA /* Dingo's Turn.swift */,
+			);
+			path = Game;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,14 +203,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89933FAA256DC91000EAB3BA /* Sora's Turn.swift in Sources */,
 				8914D766256684C0008FA81A /* main.swift in Sources */,
+				89933FB1256DCCAC00EAB3BA /* Dingo's Turn.swift in Sources */,
 				8902BA6A256A8CE100F9B636 /* Royal Wand.swift in Sources */,
+				89933FAE256DC98800EAB3BA /* Donald's Turn.swift in Sources */,
+				891B37F9256BF77A0057AB7E /* Side.swift in Sources */,
 				8902BA63256A888F00F9B636 /* Dingo.swift in Sources */,
 				8902BA60256A888400F9B636 /* Donald.swift in Sources */,
 				8902BA67256A8BFF00F9B636 /* Ultima.swift in Sources */,
 				89B332BD25673D7200681BDF /* Game.swift in Sources */,
 				8914D76E2566871A008FA81A /* Character.swift in Sources */,
 				8914D77525668EF0008FA81A /* Weapon.swift in Sources */,
+				89FBC041256B155A00CA4097 /* Coffre.swift in Sources */,
 				89B332C025673D8E00681BDF /* Player.swift in Sources */,
 				8902BA6D256A8D4A00F9B636 /* Royal Shield.swift in Sources */,
 				89FBC03D256AA7C600CA4097 /* Menu.swift in Sources */,

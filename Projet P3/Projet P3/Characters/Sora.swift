@@ -17,3 +17,6 @@ class Sora: Character {
         
     }
 }
+
+
+

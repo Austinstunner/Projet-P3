@@ -41,8 +41,8 @@ func passDialogue() {
     
     if readLine() != nil {
         
-        }
     }
+}
 
 //Sélection du mode de Jeu
 func chooseMenu() {
@@ -56,7 +56,7 @@ func chooseMenu() {
     
     if let choise = readLine() {
         switch choise {
-            case "1":
+        case "1":
             play()
             
         case "2":
@@ -84,6 +84,14 @@ func rules() {
 }
 
 func play() {
-    print("Play")
+    initPlayer1()
+    initPlayer2()
 }
 
+
+func intro() {
+    entrance()
+    passDialogue()
+    screenTitle()
+    chooseMenu()
+    }
