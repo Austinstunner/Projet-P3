@@ -7,6 +7,10 @@
 
 import Foundation
 
+//-----------------------------------------------------------\\
+//----------- DEFINITION DE L'HERITAGE SCRUTATRICE -----------\\
+//-------------------------------------------------------------\\
+
 class Scrutatrice: Weapon {
     var Ultima = Weapon(name: "Scrutatrice", type: "Keyblade", damage: 0)
 }

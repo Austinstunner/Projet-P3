@@ -7,24 +7,52 @@
 
 import Foundation
 
-//Menu de selection de l'ecran titre
+//-----------------------------------------------------------------------\\
+//----------- DEFINITION DU MENU DE SÉLECTION DE L'ECRAN TITRE -----------\\
+//-------------------------------------------------------------------------\\
 
 func chooseMenu() {
     print("""
 
                         Choose an option :
 
-                [1]Play                   [2]Rules
+
+        [1] Play                   [2] Rules                  [3] Lore
 
         """)
     
     if let choise = readLine() {
         switch choise {
         case "1":
-            play()
+            print("""
+
+                You're going to enter on the world of Kingdom Hearts,
+                                    Continue ?
+
+                    [1] Yes !                     [2] No, let me some times !
+                """)
+            if let info = readLine() {
+                switch info {
+                case "1":
+                    play()
+                case "2":
+                    chooseMenu()
+                default:
+                    print("Huh ? Your dissent forces me to punish you ! Go back to the beginning !")
+                    passDialogue()
+                    chooseMenu()
+                    
+                    
+                }
+            }
             
         case "2":
             rules()
+            passDialogue()
+            chooseMenu()
+            
+        case "3":
+            entrance()
             passDialogue()
             chooseMenu()
             
@@ -34,3 +62,4 @@ func chooseMenu() {
         }
     }
 }
+

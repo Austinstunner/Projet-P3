@@ -5,95 +5,52 @@
 //  Created by Anthony TUFFERY on 22/11/2020.
 //
 
-/*
- CORRIGER TOUTE LA BRANCHE GAME : REMPLACER player1 PAR goodSide ET player2 PAR badSide
- */
+import Foundation
 
+//---------------------------------------------------------------------------------------------------------------\\
+//------------------------------------------ DEFINITION DE LA FONCTION JEU ---------------------------------------\\
+//-----------------------------------------------------------------------------------------------------------------\\
 
-
-
-
-
-
-
-
-
-//------------------------------------------------------------------------------------------------\\
-//------------------------------------------TOUR DES JOUEURS---------------------------------------\\
-//--------------------------------------------------------------------------------------------------\\
-
-
-func game() {
-    defineRound()
-    goodsideTurn()
-    badsideTurn()
+  // Start the Game and switch round between player 1 and 2
+var round: Int = 1
+  func runGame() {
+      var p1Lost = player1.hasLoose()
+      var p2Lost = player2.hasLoose()
+      while p1Lost == false && p2Lost == false {
+          if round % 2 == 1 {
+              print("""
+                                [\(player1.nameOfTheTeam)] it's your turn
+                    """)
+              player1.fight(target: player2)
+          } else if round % 2 == 0 {
+              print("""
+                                [\(player2.nameOfTheTeam)] it's your turn
+                    """)
+              player2.fight(target: player1)
+          }
+          round += 1
+          p1Lost = player1.hasLoose()
+          p2Lost = player2.hasLoose()
+      }
+      endGame()
+    statistic()
+  }
+  
+// End Game : When a player loose display ending message and go to the statistics for each one.
+func endGame() {
+    print("🎮 End Game")
+    if player1.hasLoose() {
+        print("""
+            The \(player1.nameOfTheTeam) lost the battle.
+            Party is over after \(round) round.
+            The winner is \(player2.nameOfTheTeam)'s team !
+            """)
+    } else {
+        print("""
+            The \(player2.nameOfTheTeam) lost the battle.
+            Party is over after \(round) round.
+            The winner is \(player1.nameOfTheTeam)'s team !
+            """)
+    }
 }
 
-// tour du coté good
-func goodsideTurn() {
-    turnJ1Sora()
-    turnJ1Donald()
-    turnJ1Dingo()
-    round = round + 1
-}
-//tour du coté bad
-func badsideTurn() {
-    turnJ2Xehanort()
-    turnJ2Nescient1()
-    turnJ2Nescient2()
-    round = round + 1
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//faire un si p1 a goodside alors print deja pris prendre l'autre side}
-/*-------------------------------------------------------------------*/
-
-
-
-/*  if let choise = readLine() {
- switch choise {
- case "good":
- player2.side = GoodSide()
- case "bad":
- player2.side = BadSide()
- default:
- print("""
- i dont understand !
- 
- Select your side !
- [Good] or [Bad]
- 
- """)
- 
- choiseOfSideP2()
- }
- 
- 
- } else if player1.side === player2.side {
- print("First player has already take this side ! Choose the other !")
- choiseOfSideP2()
- }
- } */

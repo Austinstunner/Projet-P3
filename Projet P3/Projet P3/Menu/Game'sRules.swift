@@ -7,17 +7,21 @@
 
 import Foundation
 
-// Règle du Jeu
+//-----------------------------------------------------------\\
+//----------- DEFINITION DU MENU DES REGLES DU JEU -----------\\
+//-------------------------------------------------------------\\
 
 func rules() {
+    
     print("""
-        ➡️ First, Player 1 has to choose 3 fighters in the roster of the game.
-        ➡️ Second, Player 2 must do the same.
+        ➡️ First, Player 1 has to choose 3 fighters.
+        ➡️ Second, Player 2 do the same.
         
         Then, the Fight begin ⚔️ !
         Turn by turn you have to decide what your characters should do, one by one :
             ➢ Attack : choose one of the opponent's character to attack.
-            ➢ Use : choose an object to apply on your characters or the characters of your opponent.
+            ➢ Heal : choose one of your character who's be heal.
 
         """)
 }
+

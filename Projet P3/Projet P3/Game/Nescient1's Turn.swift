@@ -7,15 +7,16 @@
 
 import Foundation
 
+//--------------------------------------------------------------\\
+//----------- MENU DE CHOIX DES ACTIONS DE NESCIENT 1 -----------\\
+//----------------------------------------------------------------\\
+
 func turnJ2Nescient1() {
     print("""
 
-
-Que dois faire \(player2.side.nescient1.name) ?
+Que dois faire \(badSide.side.nescient1.name) 1 ?
 
 [1] Attaquer [2] Soigner
-
-
 
 """)
     if let choise = readLine() {
@@ -32,9 +33,9 @@ Que dois faire \(player2.side.nescient1.name) ?
     }
 }
 
-//-------------------------------------\\
-//----------ATTAQUE DE NESCIENT 1-------\\
 //---------------------------------------\\
+//---------- ATTAQUE DE NESCIENT 1 -------\\
+//-----------------------------------------\\
 
 func nescient1Attack() {
     print("""
@@ -43,26 +44,26 @@ func nescient1Attack() {
     if let choise = readLine() {
         switch choise {
         case "1":
-            print("\(player2.side.nescient1.name) attacks \(player1.side.sora.name) with his \(player2.side.nescient1.weapon.name)")
-            player1.side.sora.life -= player2.side.nescient1.weapon.damage
-            print("\(player1.side.sora.name) loses \(player2.side.nescient1.weapon.damage) HP ! ")
+            print("\(badSide.side.nescient1.name) attacks \(goodSide.side.sora.name) with his \(badSide.side.nescient1.weapon.name)")
+            goodSide.side.sora.life -= badSide.side.nescient1.weapon.damage
+            print("\(goodSide.side.sora.name) loses \(badSide.side.nescient1.weapon.damage) HP ! ")
         case "2":
-            print("\(player2.side.nescient1.name) attacks \(player1.side.donald.name) with his \(player2.side.nescient1.weapon.name)")
-            player1.side.donald.life -= player2.side.nescient1.weapon.damage
-            print("\(player1.side.donald.name) loses \(player2.side.nescient1.weapon.damage) HP ! ")
+            print("\(badSide.side.nescient1.name) attacks \(goodSide.side.donald.name) with his \(badSide.side.nescient1.weapon.name)")
+            goodSide.side.donald.life -= badSide.side.nescient1.weapon.damage
+            print("\(goodSide.side.donald.name) loses \(badSide.side.nescient1.weapon.damage) HP ! ")
         case "3":
-            print("\(player2.side.nescient1.name) attacks \(player1.side.dingo.name) with his \(player2.side.nescient1.weapon.name)")
-            player1.side.dingo.life -= player2.side.nescient1.weapon.damage
-            print("\(player1.side.dingo.name) loses \(player2.side.nescient1.weapon.damage) HP ! ")
+            print("\(badSide.side.nescient1.name) attacks \(goodSide.side.dingo.name) with his \(badSide.side.nescient1.weapon.name)")
+            goodSide.side.dingo.life -= badSide.side.nescient1.weapon.damage
+            print("\(goodSide.side.dingo.name) loses \(badSide.side.nescient1.weapon.damage) HP ! ")
         default:
             nescient1Attack()
         }
     }
 }
 
-//-------------------------------------\\
-//------------SOIN DE NESCIENT 1--------\\
 //---------------------------------------\\
+//------------ SOIN DE NESCIENT 1 --------\\
+//-----------------------------------------\\
 
 func nescient1Healing() {
     print("""
@@ -71,14 +72,14 @@ func nescient1Healing() {
     if let choise = readLine() {
         switch choise {
         case "1":
-            player2.side.nescient1.life += player2.side.nescient1.heal
-            print("\(player2.side.nescient1.name) heals himself with his \(player2.side.nescient1.weapon.type), he recovers \(player2.side.nescient1.heal) HP !")
+            badSide.side.nescient1.life += badSide.side.nescient1.heal
+            print("\(badSide.side.nescient1.name) heals himself with his \(badSide.side.nescient1.weapon.type), he recovers \(badSide.side.nescient1.heal) HP !")
         case "2":
-            player2.side.xehanort.life += player2.side.nescient1.heal
-            print("\(player2.side.nescient1.name) heals \(player2.side.xehanort.name), he recovers \(player2.side.nescient1.heal) HP !")
+            badSide.side.xehanort.life += badSide.side.nescient1.heal
+            print("\(badSide.side.nescient1.name) heals \(badSide.side.xehanort.name), he recovers \(badSide.side.nescient1.heal) HP !")
         case "3":
-            player1.side.nescient2.life += player1.side.nescient1.heal
-            print("\(player2.side.nescient1.name) heals \(player2.side.nescient2.name), he recovers \(player2.side.nescient1.heal) HP !")
+            goodSide.side.nescient2.life += goodSide.side.nescient1.heal
+            print("\(badSide.side.nescient1.name) heals \(badSide.side.nescient2.name), he recovers \(badSide.side.nescient1.heal) HP !")
         default:
             nescient1Healing()
         }

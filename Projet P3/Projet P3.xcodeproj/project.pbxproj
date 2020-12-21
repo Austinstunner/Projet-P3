@@ -7,36 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8902BA5D256A887100F9B636 /* Sora.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA5C256A887100F9B636 /* Sora.swift */; };
-		8902BA60256A888400F9B636 /* Donald.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA5F256A888400F9B636 /* Donald.swift */; };
-		8902BA63256A888F00F9B636 /* Dingo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA62256A888F00F9B636 /* Dingo.swift */; };
-		8902BA67256A8BFF00F9B636 /* Ultima.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA66256A8BFF00F9B636 /* Ultima.swift */; };
-		8902BA6A256A8CE100F9B636 /* Royal Wand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA69256A8CE100F9B636 /* Royal Wand.swift */; };
-		8902BA6D256A8D4A00F9B636 /* Royal Shield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA6C256A8D4A00F9B636 /* Royal Shield.swift */; };
-		8902BA70256A8FC300F9B636 /* Xehanort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA6F256A8FC300F9B636 /* Xehanort.swift */; };
-		8902BA73256A917900F9B636 /* Scrutatrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA72256A917900F9B636 /* Scrutatrice.swift */; };
-		8902BA77256A91EA00F9B636 /* Nescient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA76256A91EA00F9B636 /* Nescient.swift */; };
-		8902BA7A256A92DE00F9B636 /* Claw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA79256A92DE00F9B636 /* Claw.swift */; };
+		8902BA5D256A887100F9B636 /* Keyblade Wielder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA5C256A887100F9B636 /* Keyblade Wielder.swift */; };
+		8902BA60256A888400F9B636 /* Royal Sorcecer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA5F256A888400F9B636 /* Royal Sorcecer.swift */; };
+		8902BA63256A888F00F9B636 /* Royal Defender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA62256A888F00F9B636 /* Royal Defender.swift */; };
+		8902BA67256A8BFF00F9B636 /* Keyblade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA66256A8BFF00F9B636 /* Keyblade.swift */; };
+		8902BA6A256A8CE100F9B636 /* Wand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA69256A8CE100F9B636 /* Wand.swift */; };
+		8902BA6D256A8D4A00F9B636 /* Shield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA6C256A8D4A00F9B636 /* Shield.swift */; };
+		8902BA77256A91EA00F9B636 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA76256A91EA00F9B636 /* Monster.swift */; };
+		8902BA7A256A92DE00F9B636 /* Physical Attack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8902BA79256A92DE00F9B636 /* Physical Attack.swift */; };
 		8914D766256684C0008FA81A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8914D765256684C0008FA81A /* main.swift */; };
 		8914D76E2566871A008FA81A /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8914D76D2566871A008FA81A /* Character.swift */; };
 		8914D77525668EF0008FA81A /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8914D77425668EF0008FA81A /* Weapon.swift */; };
-		891B37F9256BF77A0057AB7E /* Side.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891B37F8256BF77A0057AB7E /* Side.swift */; };
-		891F464B256E8B1B000A6A1E /* Xehanort's Turn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F464A256E8B1B000A6A1E /* Xehanort's Turn.swift */; };
-		891F464E256E8B3B000A6A1E /* Nescient1's Turn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F464D256E8B3B000A6A1E /* Nescient1's Turn.swift */; };
-		891F4651256E8B4E000A6A1E /* Nescient2's Turn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F4650256E8B4E000A6A1E /* Nescient2's Turn.swift */; };
 		891F4654256EA348000A6A1E /* Entrance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F4653256EA348000A6A1E /* Entrance.swift */; };
 		891F4658256EAB90000A6A1E /* ScreenTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F4657256EAB90000A6A1E /* ScreenTitle.swift */; };
 		891F465B256EABF5000A6A1E /* SelectingMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F465A256EABF5000A6A1E /* SelectingMenu.swift */; };
 		891F465E256EAC94000A6A1E /* Game'sRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F465D256EAC94000A6A1E /* Game'sRules.swift */; };
 		891F4662256EAE19000A6A1E /* PlayingMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F4661256EAE19000A6A1E /* PlayingMenu.swift */; };
-		891F4665256ECBA9000A6A1E /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891F4664256ECBA9000A6A1E /* Round.swift */; };
-		89933FAA256DC91000EAB3BA /* Sora's Turn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89933FA9256DC91000EAB3BA /* Sora's Turn.swift */; };
-		89933FAE256DC98800EAB3BA /* Donald's Turn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89933FAD256DC98700EAB3BA /* Donald's Turn.swift */; };
-		89933FB1256DCCAC00EAB3BA /* Dingo's Turn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89933FB0256DCCAC00EAB3BA /* Dingo's Turn.swift */; };
 		89B332BD25673D7200681BDF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B332BC25673D7200681BDF /* Game.swift */; };
 		89B332C025673D8E00681BDF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B332BF25673D8E00681BDF /* Player.swift */; };
+		89D1B650257EE8C400B13C14 /* Player2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1B64F257EE8C400B13C14 /* Player2.swift */; };
+		89D1B653257EE8EC00B13C14 /* Player1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D1B652257EE8EC00B13C14 /* Player1.swift */; };
+		89F9CCFD2570250000ECBF26 /* Statistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F9CCFC2570250000ECBF26 /* Statistic.swift */; };
 		89FBC03D256AA7C600CA4097 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FBC03C256AA7C600CA4097 /* Menu.swift */; };
-		89FBC041256B155A00CA4097 /* Coffre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FBC040256B155A00CA4097 /* Coffre.swift */; };
+		89FBC041256B155A00CA4097 /* Treasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FBC040256B155A00CA4097 /* Treasure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,37 +45,30 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8902BA5C256A887100F9B636 /* Sora.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sora.swift; sourceTree = "<group>"; };
-		8902BA5F256A888400F9B636 /* Donald.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donald.swift; sourceTree = "<group>"; };
-		8902BA62256A888F00F9B636 /* Dingo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dingo.swift; sourceTree = "<group>"; };
-		8902BA66256A8BFF00F9B636 /* Ultima.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ultima.swift; sourceTree = "<group>"; };
-		8902BA69256A8CE100F9B636 /* Royal Wand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Royal Wand.swift"; sourceTree = "<group>"; };
-		8902BA6C256A8D4A00F9B636 /* Royal Shield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Royal Shield.swift"; sourceTree = "<group>"; };
-		8902BA6F256A8FC300F9B636 /* Xehanort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xehanort.swift; sourceTree = "<group>"; };
-		8902BA72256A917900F9B636 /* Scrutatrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scrutatrice.swift; sourceTree = "<group>"; };
-		8902BA76256A91EA00F9B636 /* Nescient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nescient.swift; sourceTree = "<group>"; };
-		8902BA79256A92DE00F9B636 /* Claw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Claw.swift; sourceTree = "<group>"; };
+		8902BA5C256A887100F9B636 /* Keyblade Wielder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Keyblade Wielder.swift"; sourceTree = "<group>"; };
+		8902BA5F256A888400F9B636 /* Royal Sorcecer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Royal Sorcecer.swift"; sourceTree = "<group>"; };
+		8902BA62256A888F00F9B636 /* Royal Defender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Royal Defender.swift"; sourceTree = "<group>"; };
+		8902BA66256A8BFF00F9B636 /* Keyblade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyblade.swift; sourceTree = "<group>"; };
+		8902BA69256A8CE100F9B636 /* Wand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wand.swift; sourceTree = "<group>"; };
+		8902BA6C256A8D4A00F9B636 /* Shield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shield.swift; sourceTree = "<group>"; };
+		8902BA76256A91EA00F9B636 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		8902BA79256A92DE00F9B636 /* Physical Attack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Physical Attack.swift"; sourceTree = "<group>"; };
 		8914D762256684C0008FA81A /* Projet P3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Projet P3"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8914D765256684C0008FA81A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		8914D76D2566871A008FA81A /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		8914D77425668EF0008FA81A /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
-		891B37F8256BF77A0057AB7E /* Side.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Side.swift; sourceTree = "<group>"; };
-		891F464A256E8B1B000A6A1E /* Xehanort's Turn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Xehanort's Turn.swift"; sourceTree = "<group>"; };
-		891F464D256E8B3B000A6A1E /* Nescient1's Turn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nescient1's Turn.swift"; sourceTree = "<group>"; };
-		891F4650256E8B4E000A6A1E /* Nescient2's Turn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nescient2's Turn.swift"; sourceTree = "<group>"; };
 		891F4653256EA348000A6A1E /* Entrance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entrance.swift; sourceTree = "<group>"; };
 		891F4657256EAB90000A6A1E /* ScreenTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTitle.swift; sourceTree = "<group>"; };
 		891F465A256EABF5000A6A1E /* SelectingMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectingMenu.swift; sourceTree = "<group>"; };
 		891F465D256EAC94000A6A1E /* Game'sRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Game'sRules.swift"; sourceTree = "<group>"; };
 		891F4661256EAE19000A6A1E /* PlayingMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingMenu.swift; sourceTree = "<group>"; };
-		891F4664256ECBA9000A6A1E /* Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
-		89933FA9256DC91000EAB3BA /* Sora's Turn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sora's Turn.swift"; sourceTree = "<group>"; };
-		89933FAD256DC98700EAB3BA /* Donald's Turn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Donald's Turn.swift"; sourceTree = "<group>"; };
-		89933FB0256DCCAC00EAB3BA /* Dingo's Turn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dingo's Turn.swift"; sourceTree = "<group>"; };
 		89B332BC25673D7200681BDF /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		89B332BF25673D8E00681BDF /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		89D1B64F257EE8C400B13C14 /* Player2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player2.swift; sourceTree = "<group>"; };
+		89D1B652257EE8EC00B13C14 /* Player1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player1.swift; sourceTree = "<group>"; };
+		89F9CCFC2570250000ECBF26 /* Statistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistic.swift; sourceTree = "<group>"; };
 		89FBC03C256AA7C600CA4097 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
-		89FBC040256B155A00CA4097 /* Coffre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffre.swift; sourceTree = "<group>"; };
+		89FBC040256B155A00CA4097 /* Treasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treasure.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +86,10 @@
 			isa = PBXGroup;
 			children = (
 				8914D77425668EF0008FA81A /* Weapon.swift */,
-				8902BA66256A8BFF00F9B636 /* Ultima.swift */,
-				8902BA69256A8CE100F9B636 /* Royal Wand.swift */,
-				8902BA6C256A8D4A00F9B636 /* Royal Shield.swift */,
-				8902BA72256A917900F9B636 /* Scrutatrice.swift */,
-				8902BA79256A92DE00F9B636 /* Claw.swift */,
+				8902BA66256A8BFF00F9B636 /* Keyblade.swift */,
+				8902BA69256A8CE100F9B636 /* Wand.swift */,
+				8902BA6C256A8D4A00F9B636 /* Shield.swift */,
+				8902BA79256A92DE00F9B636 /* Physical Attack.swift */,
 			);
 			path = Weapons;
 			sourceTree = "<group>";
@@ -113,11 +98,10 @@
 			isa = PBXGroup;
 			children = (
 				8914D76D2566871A008FA81A /* Character.swift */,
-				8902BA5C256A887100F9B636 /* Sora.swift */,
-				8902BA5F256A888400F9B636 /* Donald.swift */,
-				8902BA62256A888F00F9B636 /* Dingo.swift */,
-				8902BA6F256A8FC300F9B636 /* Xehanort.swift */,
-				8902BA76256A91EA00F9B636 /* Nescient.swift */,
+				8902BA5C256A887100F9B636 /* Keyblade Wielder.swift */,
+				8902BA5F256A888400F9B636 /* Royal Sorcecer.swift */,
+				8902BA62256A888F00F9B636 /* Royal Defender.swift */,
+				8902BA76256A91EA00F9B636 /* Monster.swift */,
 			);
 			path = Characters;
 			sourceTree = "<group>";
@@ -142,11 +126,10 @@
 			isa = PBXGroup;
 			children = (
 				8914D765256684C0008FA81A /* main.swift */,
-				891B37F8256BF77A0057AB7E /* Side.swift */,
-				89B332BF25673D8E00681BDF /* Player.swift */,
-				89FBC040256B155A00CA4097 /* Coffre.swift */,
 				891F4656256EA46B000A6A1E /* Menu */,
 				89933FA8256DC80300EAB3BA /* Game */,
+				89F9CCFF25702BC700ECBF26 /* Statistic */,
+				89D1B64E257EE87600B13C14 /* Player */,
 				8902BA5A256A87E000F9B636 /* Characters */,
 				8902BA59256A87D100F9B636 /* Weapons */,
 				8914D763256684C0008FA81A /* Products */,
@@ -171,15 +154,27 @@
 			isa = PBXGroup;
 			children = (
 				89B332BC25673D7200681BDF /* Game.swift */,
-				891F4664256ECBA9000A6A1E /* Round.swift */,
-				89933FA9256DC91000EAB3BA /* Sora's Turn.swift */,
-				89933FAD256DC98700EAB3BA /* Donald's Turn.swift */,
-				89933FB0256DCCAC00EAB3BA /* Dingo's Turn.swift */,
-				891F464A256E8B1B000A6A1E /* Xehanort's Turn.swift */,
-				891F464D256E8B3B000A6A1E /* Nescient1's Turn.swift */,
-				891F4650256E8B4E000A6A1E /* Nescient2's Turn.swift */,
+				89FBC040256B155A00CA4097 /* Treasure.swift */,
 			);
 			path = Game;
+			sourceTree = "<group>";
+		};
+		89D1B64E257EE87600B13C14 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				89B332BF25673D8E00681BDF /* Player.swift */,
+				89D1B652257EE8EC00B13C14 /* Player1.swift */,
+				89D1B64F257EE8C400B13C14 /* Player2.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		89F9CCFF25702BC700ECBF26 /* Statistic */ = {
+			isa = PBXGroup;
+			children = (
+				89F9CCFC2570250000ECBF26 /* Statistic.swift */,
+			);
+			path = Statistic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,36 +234,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89933FAA256DC91000EAB3BA /* Sora's Turn.swift in Sources */,
 				8914D766256684C0008FA81A /* main.swift in Sources */,
-				89933FB1256DCCAC00EAB3BA /* Dingo's Turn.swift in Sources */,
-				8902BA6A256A8CE100F9B636 /* Royal Wand.swift in Sources */,
-				89933FAE256DC98800EAB3BA /* Donald's Turn.swift in Sources */,
-				891B37F9256BF77A0057AB7E /* Side.swift in Sources */,
-				8902BA63256A888F00F9B636 /* Dingo.swift in Sources */,
-				8902BA60256A888400F9B636 /* Donald.swift in Sources */,
-				891F464B256E8B1B000A6A1E /* Xehanort's Turn.swift in Sources */,
+				89D1B650257EE8C400B13C14 /* Player2.swift in Sources */,
+				89F9CCFD2570250000ECBF26 /* Statistic.swift in Sources */,
+				8902BA6A256A8CE100F9B636 /* Wand.swift in Sources */,
+				8902BA63256A888F00F9B636 /* Royal Defender.swift in Sources */,
+				8902BA60256A888400F9B636 /* Royal Sorcecer.swift in Sources */,
+				89D1B653257EE8EC00B13C14 /* Player1.swift in Sources */,
 				891F4654256EA348000A6A1E /* Entrance.swift in Sources */,
-				8902BA67256A8BFF00F9B636 /* Ultima.swift in Sources */,
+				8902BA67256A8BFF00F9B636 /* Keyblade.swift in Sources */,
 				89B332BD25673D7200681BDF /* Game.swift in Sources */,
 				8914D76E2566871A008FA81A /* Character.swift in Sources */,
 				891F4662256EAE19000A6A1E /* PlayingMenu.swift in Sources */,
 				8914D77525668EF0008FA81A /* Weapon.swift in Sources */,
-				89FBC041256B155A00CA4097 /* Coffre.swift in Sources */,
+				89FBC041256B155A00CA4097 /* Treasure.swift in Sources */,
 				891F465E256EAC94000A6A1E /* Game'sRules.swift in Sources */,
 				89B332C025673D8E00681BDF /* Player.swift in Sources */,
-				891F4651256E8B4E000A6A1E /* Nescient2's Turn.swift in Sources */,
-				8902BA6D256A8D4A00F9B636 /* Royal Shield.swift in Sources */,
+				8902BA6D256A8D4A00F9B636 /* Shield.swift in Sources */,
 				89FBC03D256AA7C600CA4097 /* Menu.swift in Sources */,
 				891F4658256EAB90000A6A1E /* ScreenTitle.swift in Sources */,
-				8902BA5D256A887100F9B636 /* Sora.swift in Sources */,
-				8902BA7A256A92DE00F9B636 /* Claw.swift in Sources */,
-				8902BA70256A8FC300F9B636 /* Xehanort.swift in Sources */,
-				8902BA77256A91EA00F9B636 /* Nescient.swift in Sources */,
-				891F464E256E8B3B000A6A1E /* Nescient1's Turn.swift in Sources */,
+				8902BA5D256A887100F9B636 /* Keyblade Wielder.swift in Sources */,
+				8902BA7A256A92DE00F9B636 /* Physical Attack.swift in Sources */,
+				8902BA77256A91EA00F9B636 /* Monster.swift in Sources */,
 				891F465B256EABF5000A6A1E /* SelectingMenu.swift in Sources */,
-				891F4665256ECBA9000A6A1E /* Round.swift in Sources */,
-				8902BA73256A917900F9B636 /* Scrutatrice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

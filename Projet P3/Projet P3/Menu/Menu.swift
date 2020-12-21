@@ -7,7 +7,9 @@
 
 import Foundation
 
-// Passage des dialogues style GameBoy
+//-------------------------------------------------------------\\
+//----------- FONCTION POUR LE PASSAGE DES DIALOGUES -----------\\
+//---------------------------------------------------------------\\
 func passDialogue() {
     print("Press enter to continue..")
     
@@ -15,12 +17,11 @@ func passDialogue() {
         
     }
 }
+//----------------------------------------------------------------------------------------------------------\\
+//----------- DEFINITION DE LA FONCTION QUI REGROUPE L'ENSEMBLE DES ACTIONS DU MENU DE DEMARRAGE ------------\\
+//------------------------------------------------------------------------------------------------------------\\
 
-
-
-func intro() {
-    entrance()
-    passDialogue()
+func startingGame() {
     screenTitle()
     chooseMenu()
-    }
+}

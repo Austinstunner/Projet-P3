@@ -7,6 +7,9 @@
 
 import Foundation
 
+//----------------------------------------\\
+//-----------INTRODUCTION DU JEU-----------\\
+//------------------------------------------\\
 class Side {
     var sora = Sora()
     var donald = Donald()
@@ -24,6 +27,10 @@ class Side {
         self.nescient2 = nescient2
     }
 }
+
+//----------------------------------------\\
+//-----------INTRODUCTION DU JEU-----------\\
+//------------------------------------------\\
 
 class Goodside: Side {
     

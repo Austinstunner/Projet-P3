@@ -7,15 +7,17 @@
 
 import Foundation
 
+//--------------------------------------------------------\\
+//----------- MENU DE CHOIX DES ACTIONS DE SORA -----------\\
+//----------------------------------------------------------\\
+
 func turnJ1Sora() {
     print("""
 Joueur 1 turn.
 
-Que dois faire \(player1.side.sora.name) ?
+Que dois faire \(goodSide.side.sora.name) ?
 
 [1] Attaquer [2] Soigner
-
-
 
 """)
     if let choise = readLine() {
@@ -32,9 +34,9 @@ Que dois faire \(player1.side.sora.name) ?
     }
 }
 
-//-------------------------------\\
-//----------ATTAQUE DE SORA-------\\
 //---------------------------------\\
+//---------- ATTAQUE DE SORA -------\\
+//-----------------------------------\\
 
 func soraAttack() {
     print("""
@@ -43,26 +45,26 @@ func soraAttack() {
     if let choise = readLine() {
         switch choise {
         case "1":
-            print("\(player1.side.sora.name) attacks \(player2.side.xehanort.name) with his \(player1.side.sora.weapon.name)")
-            player2.side.xehanort.life -= player1.side.sora.weapon.damage
-            print("\(player2.side.xehanort.name) loses \(player1.side.sora.weapon.damage) HP ! ")
+            print("\(goodSide.side.sora.name) attacks \(goodSide.side.xehanort.name) with his \(goodSide.side.sora.weapon.name)")
+            badSide.side.xehanort.life -= goodSide.side.sora.weapon.damage
+            print("\(badSide.side.xehanort.name) loses \(goodSide.side.sora.weapon.damage) HP ! ")
         case "2":
-            print("\(player1.side.sora.name) attacks \(player2.side.nescient1.name) with his \(player1.side.sora.weapon.name)")
-            player2.side.nescient1.life -= player1.side.sora.weapon.damage
-            print("\(player2.side.nescient1.name) loses \(player1.side.sora.weapon.damage) HP ! ")
+            print("\(goodSide.side.sora.name) attacks \(badSide.side.nescient1.name) with his \(goodSide.side.sora.weapon.name)")
+            badSide.side.nescient1.life -= goodSide.side.sora.weapon.damage
+            print("\(badSide.side.nescient1.name) loses \(goodSide.side.sora.weapon.damage) HP ! ")
         case "3":
-            print("\(player1.side.sora.name) attacks \(player2.side.nescient2.name) with his \(player1.side.sora.weapon.name)")
-            player2.side.nescient2.life -= player1.side.sora.weapon.damage
-            print("\(player2.side.nescient2.name) loses \(player1.side.sora.weapon.damage) HP ! ")
+            print("\(goodSide.side.sora.name) attacks \(badSide.side.nescient2.name) with his \(goodSide.side.sora.weapon.name)")
+            badSide.side.nescient2.life -= goodSide.side.sora.weapon.damage
+            print("\(badSide.side.nescient2.name) loses \(goodSide.side.sora.weapon.damage) HP ! ")
         default:
             soraAttack()
         }
     }
 }
 
-//-------------------------------\\
-//-----------SOIN DE SORA---------\\
 //---------------------------------\\
+//----------- SOIN DE SORA ---------\\
+//-----------------------------------\\
 
 func soraHealing() {
     print("""
@@ -71,14 +73,14 @@ func soraHealing() {
     if let choise = readLine() {
         switch choise {
         case "1":
-            goodSide.side.sora.life += player1.side.sora.heal
-            print("\(player1.side.sora.name) heals himself with his \(player1.side.sora.weapon.type), he recovers \(player1.side.sora.heal) HP !")
+            goodSide.side.sora.life += goodSide.side.sora.heal
+            print("\(goodSide.side.sora.name) heals himself with his \(goodSide.side.sora.weapon.type), he recovers \(goodSide.side.sora.heal) HP !")
         case "2":
-            player1.side.donald.life += player1.side.sora.heal
-            print("\(player1.side.sora.name) heals \(player1.side.donald.name) with his \(player1.side.sora.weapon.type), he recovers \(player1.side.sora.heal) HP !")
+            goodSide.side.donald.life += goodSide.side.sora.heal
+            print("\(goodSide.side.sora.name) heals \(goodSide.side.donald.name) with his \(goodSide.side.sora.weapon.type), he recovers \(goodSide.side.sora.heal) HP !")
         case "3":
-            player1.side.dingo.life += player1.side.sora.heal
-            print("\(player1.side.sora.name) heals \(player1.side.dingo.name) with his \(player1.side.sora.weapon.type), he recovers \(player1.side.sora.heal) HP !")
+            goodSide.side.dingo.life += goodSide.side.sora.heal
+            print("\(goodSide.side.sora.name) heals \(goodSide.side.dingo.name) with his \(goodSide.side.sora.weapon.type), he recovers \(goodSide.side.sora.heal) HP !")
         default:
             soraHealing()
         }

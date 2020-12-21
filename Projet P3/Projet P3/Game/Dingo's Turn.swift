@@ -7,14 +7,16 @@
 
 import Foundation
 
+//---------------------------------------------------------\\
+//----------- MENU DE CHOIX DES ACTIONS DE DINGO -----------\\
+//-----------------------------------------------------------\\
+
 func turnJ1Dingo() {
     print("""
 
-Que dois faire \(player1.side.dingo.name) ?
+Que dois faire \(goodSide.side.dingo.name) ?
 
 [1] Attaquer [2] Soigner
-
-
 
 """)
     if let choise = readLine() {
@@ -31,9 +33,9 @@ Que dois faire \(player1.side.dingo.name) ?
     }
 }
 
-//-------------------------------\\
-//--------ATTAQUE DE DINGO-------\\
-//---------------------------------\\
+//--------------------------------\\
+//-------- ATTAQUE DE DINGO -------\\
+//----------------------------------\\
 
 func dingoAttack() {
     print("""
@@ -42,26 +44,26 @@ func dingoAttack() {
     if let choise = readLine() {
         switch choise {
         case "1":
-            print("\(player1.side.dingo.name) attacks \(player2.side.xehanort.name) with his \(player1.side.dingo.weapon.name)")
-            player2.side.xehanort.life -= player1.side.dingo.weapon.damage
-            print("\(player2.side.xehanort.name) loses \(player1.side.dingo.weapon.damage) HP ! ")
+            print("\(goodSide.side.dingo.name) attacks \(badSide.side.xehanort.name) with his \(goodSide.side.dingo.weapon.name)")
+            badSide.side.xehanort.life -= goodSide.side.dingo.weapon.damage
+            print("\(badSide.side.xehanort.name) loses \(goodSide.side.dingo.weapon.damage) HP ! ")
         case "2":
-            print("\(player1.side.dingo.name) attacks \(player2.side.nescient1.name) with his \(player1.side.dingo.weapon.name)")
-            player2.side.nescient1.life -= player1.side.dingo.weapon.damage
-            print("\(player2.side.nescient1.name) loses \(player1.side.dingo.weapon.damage) HP ! ")
+            print("\(goodSide.side.dingo.name) attacks \(badSide.side.nescient1.name) with his \(goodSide.side.dingo.weapon.name)")
+            badSide.side.nescient1.life -= goodSide.side.dingo.weapon.damage
+            print("\(badSide.side.nescient1.name) loses \(goodSide.side.dingo.weapon.damage) HP ! ")
         case "3":
-            print("\(player1.side.dingo.name) attacks \(player2.side.nescient2.name) with his \(player1.side.dingo.weapon.name)")
-            player2.side.nescient2.life -= player1.side.dingo.weapon.damage
-            print("\(player2.side.nescient2.name) loses \(player1.side.dingo.weapon.damage) HP ! ")
+            print("\(goodSide.side.dingo.name) attacks \(badSide.side.nescient2.name) with his \(goodSide.side.dingo.weapon.name)")
+            badSide.side.nescient2.life -= goodSide.side.dingo.weapon.damage
+            print("\(badSide.side.nescient2.name) loses \(goodSide.side.dingo.weapon.damage) HP ! ")
         default:
             dingoAttack()
         }
     }
 }
 
-//-------------------------------\\
-//----------SOIN DE DINGO--------\\
-//---------------------------------\\
+//--------------------------------\\
+//---------- SOIN DE DINGO --------\\
+//----------------------------------\\
 
 func dingoHealing() {
     print("""
@@ -70,14 +72,14 @@ func dingoHealing() {
     if let choise = readLine() {
         switch choise {
         case "1":
-            player1.side.dingo.life += player1.side.dingo.heal
-            print("\(player1.side.dingo.name) heals himself with his \(player1.side.dingo.weapon.type), he recovers \(player1.side.dingo.heal) HP !")
+            goodSide.side.dingo.life += goodSide.side.dingo.heal
+            print("\(goodSide.side.dingo.name) heals himself with his \(goodSide.side.dingo.weapon.type), he recovers \(goodSide.side.dingo.heal) HP !")
         case "2":
-            player1.side.sora.life += player1.side.dingo.heal
-            print("\(player1.side.dingo.name) heals \(player1.side.sora.name) with his \(player1.side.dingo.weapon.type), he recovers \(player1.side.dingo.heal) HP !")
+            goodSide.side.sora.life += goodSide.side.dingo.heal
+            print("\(goodSide.side.dingo.name) heals \(goodSide.side.sora.name) with his \(goodSide.side.dingo.weapon.type), he recovers \(goodSide.side.dingo.heal) HP !")
         case "3":
-            player1.side.donald.life += player1.side.dingo.heal
-            print("\(player1.side.dingo.name) heals \(player1.side.donald.name) with his \(player1.side.dingo.weapon.type), he recovers \(player1.side.dingo.heal) HP !")
+            goodSide.side.donald.life += goodSide.side.dingo.heal
+            print("\(goodSide.side.dingo.name) heals \(goodSide.side.donald.name) with his \(goodSide.side.dingo.weapon.type), he recovers \(goodSide.side.dingo.heal) HP !")
         default:
             dingoHealing()
         }

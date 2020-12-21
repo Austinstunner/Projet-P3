@@ -7,76 +7,80 @@
 
 import Foundation
 
-var goodSide = Player(nameOfTheTeam: "", side: Goodside())
-var badSide = Player(nameOfTheTeam: "", side: Badside())
-
+//------------------------------------------------------------------\\
+//----------- DEFINITION DU MENU DE SELECTION DES EQUIPES -----------\\
+//--------------------------------------------------------------------\\
 
 func play() {
-    print("""
-                   Player 1, select your side !
+   print("""
 
-            [1]Goodside                    [2]Badside
 
-        """)
-    if let choise = readLine() {
-        switch choise {
-        case "1":
-            print("""
-            Goodside choosen !
-        select the name of your team !
 
-""")
-            goodSide.nameOfTheTeam = readLine()!
-        case "2":
-            print("""
-            Badside choosen !
-        select the name of your team !
-""")
-            badSide.nameOfTheTeam = readLine()!
-        default:
-            play()
-        }
-    }
+    - Jiminy Cricket : My king, i fear that Xehanort's army was too big for Sora, Donald and Goofy.. We have to send another
+    squad as reinforcement
+    - King Mickey : Hmm.. I see, were you thinking of a specific squad my dear Jiminy ?
+    - Jiminy Cricket : Yes ! And i have ever call them, they're waiting behind the door.
+    - King Mickey : Good, send the folks back in.
+    - Jiminy Cricket : Sure.
+
+    """)
+    
+    passDialogue()
     
     print("""
-                Player 2 Select the other side automaticaly.
-                        Give a name to your team !
-        """)
-    if goodSide.nameOfTheTeam == "" {
-        goodSide.nameOfTheTeam = readLine()!
-    }
-    else {
-        badSide.nameOfTheTeam = readLine()!
-    }
+    - King Mickey : Hi Soldiers! Today, i send my elite team to fight the evil Xehanort in order to stop him to get
+    ahold of the Kingdom Heart. I need your services for cover their backs.
+    - King Mickey : Oh, i touth.. i'm sorry, precipitation makes me forget my manners ! i forgot to ask..
+    What's the name of your squad ?
+
+    """)
+    
+    createNameOfTeamP1()
+    
+    print("""
+
+    - King Mickey : Well ! Thanks to help us \(player1.nameOfTheTeam) !
+    - Jiminy Cricket : That's right my King, i didn't bother to do some presentations ! Here are ... :
+
+    """)
+    createP1()
+    passDialogue()
+    
+    print("""
+    - King Mickey : Well ! So now, i send you on the Necropolis of keyblades for helping our friends !
+    - Jiminy Cricket : just before you go be aware, i've heard that a squad name ...
+
+    """)
+    
+    createNameOfTeamP2()
+    
+    print("""
+
+    - Jiminy Cricket : ... \(player2.nameOfTheTeam) were sent by the ennemies.
+    It is composed by ...
+
+    """)
+    
+    createP2()
+    passDialogue()
+    
+    print("""
+
+    - Jiminy Cricket :  ...\(player2.characters[0].name), \(player2.characters[1].name), \(player2.characters[2].name).
+    They are ruthless adversaries !
+    - King Mickey : Good luck boys !
+
+    """)
+    
+    passDialogue()
+    
     print("""
         
-        ••CASTLE OF THE KING MICKEY - In the Throne Room••
+    \(player1.characters[0].name), \(player1.characters[1].name), \(player1.characters[2].name) pointing right to the armory. all took their belongings.
+    ______________________________________________
 
-        King Mickey : " Sora, you are the only person in this world able to defeat Xehanort ! "
-
-        Sora : " Uhh.. ? How can you be sure ?
-
-        King Mickey : " Find the X-Blade before him, this artefact is the key to re-establish peace of all the world ! "
-
-        Sora : " I promise to do my best ! Donald, Goofy.. let's save the kingdom ! "
-
-        Donald, Dingo : " Yeah ! "
-        
-        King Mickey open a portal. Sora and his friends jump into..
-        
-        ••FREEZING NIGHT - In the Keyblade Necropolis••
-        
-        Sora : " Where are we ?! "
-        
-        Donald : " BrrrBrrrBrrr, don't know but i can't feel my fingers anymore because of the cold. "
-        
-        Goofy : " I think that's where the first war for the Kingdom Hearts happend.
-                At that time, a thousand members of light Keyblade and Darkness Keyblade clashed for the X-Blade. "
-        
-        
-        
-        """)
+    """)
     
+    passDialogue()
+    runGame()
 }
-// si le nom de l'équipe goodSide est égale à "" alors donne lui un nom sinon donne un nom à badSide
-// ce qui revient a dire que si le nom de goodSide est déjà prit alors il devra renseigner automatiquement le nom de badSide et inversement

@@ -7,15 +7,16 @@
 
 import Foundation
 
-//----------------------------------------\\
-//----------------ECRAN TITRE--------------\\
-//------------------------------------------\\
+//----------------------------------------------------------\\
+//---------------- DEFINITION DE L'ECRAN TITRE --------------\\
+//------------------------------------------------------------\\
 
 func screenTitle() {
     print("""
-KINGDOM HEARTS : BATTLE FOR THE HEARTS OF ALL WORLDS
+KINGDOM HEARTS : BATTLE FOR THE HEART OF ALL WORLDS
 
 """
     )
     
 }
+
