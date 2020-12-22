@@ -17,6 +17,7 @@ class Player {
         self.nameOfTheTeam = nameOfTheTeam
     }
     
+    //-- function for select character of the team
     func selectedCharacter(target: Player) -> Character {
             print("")
             print("""
@@ -24,7 +25,7 @@ class Player {
 
                     """)
             
-            // Listing Characters available : The display of the character's life evolves with the game
+            // Show Characters available during the game, (NB : AJOUTER PHRASE PERSONNALISE POUR ETAT DE SANTE)
             for (index, character) in characters.enumerated() {
                 let currentLife = character.life
                 
@@ -58,6 +59,8 @@ class Player {
                 return selectedCharacter(target: target)
             }
         }
+    
+    //--- Fight menu for character selected
     
     func fight(target: Player) {
             let currentPlayer = selectedCharacter(target: target)
@@ -94,7 +97,9 @@ class Player {
             }
         }
 
-func selectedTarget(target: Player) -> Character {
+    //-- Select a target of other player to fight
+    
+    func selectedTarget(target: Player) -> Character {
         print("")
         print("""
             Select your opponent
@@ -123,6 +128,9 @@ func selectedTarget(target: Player) -> Character {
             return selectedTarget(target: target)
         }
     }
+    
+    //-- define the end of a team
+    
     func hasLoose() -> Bool {
             if characters[0].isDead() && characters[1].isDead() && characters[2].isDead() {
                 return true

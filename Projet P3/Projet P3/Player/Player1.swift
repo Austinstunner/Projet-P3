@@ -9,6 +9,7 @@ import Foundation
 
 var player1 = Player(nameOfTheTeam: "")
 
+//--- Create the name of the team
 func createNameOfTeamP1() {
     print("""
  _________________________________________
@@ -18,6 +19,8 @@ func createNameOfTeamP1() {
 """)
     player1.nameOfTheTeam = readLine()!
 }
+
+//--- select the first character
 
 func selectCharacter1P1() {
     
@@ -61,6 +64,8 @@ func selectCharacter1P1() {
     }
 }
 
+//-- define name of the character selected
+
 func nameOfCharacter1P1() {
     print("""
 
@@ -70,6 +75,8 @@ func nameOfCharacter1P1() {
 }
 
 //-----------
+
+//--- select the second character
 
 func selectCharacter2P1() {
     
@@ -113,6 +120,8 @@ func selectCharacter2P1() {
     }
 }
 
+//-- define the name of the second character
+
 func nameOfCharacter2P1() {
     
     print("""
@@ -123,6 +132,8 @@ func nameOfCharacter2P1() {
 }
 
 //------------
+
+//--- select the third character
 
 func selectCharacter3P1() {
     
@@ -154,6 +165,8 @@ func selectCharacter3P1() {
     }
 }
 
+//-- define the name of the third character
+
 func nameOfCharacter3P1() {
     
     print("""
@@ -165,6 +178,7 @@ func nameOfCharacter3P1() {
 
 //------------
 
+//-- function who's listing the order of execution of creating player 1's team 
 func createP1() {
     selectCharacter1P1()
     nameOfCharacter1P1()
