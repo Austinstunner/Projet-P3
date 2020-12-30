@@ -7,4 +7,6 @@
 
 import Foundation
 
-startingGame()
+//-- var game = Game()
+var game = Game()
+game.startingGame()

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+/*
 var player1 = Player(nameOfTheTeam: "")
 
 //--- Create the name of the team
@@ -187,3 +187,4 @@ func createP1() {
     selectCharacter3P1()
     nameOfCharacter3P1()
 }
+*/

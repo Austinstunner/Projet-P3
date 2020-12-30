@@ -11,6 +11,8 @@ import Foundation
 //------------------------- STATISTIC FUNCTION OF THE GAME  -------------------------\\
 //------------------------------------------------------------------------------------\\
 
+extension Game {
+    
 func statistic() {
     print("""
     
@@ -44,4 +46,4 @@ func statistic() {
     
     """)
 }
-
+}

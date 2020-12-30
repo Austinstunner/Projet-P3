@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+extension Game {
 //------------------------------------------\\
 //----------- SWITCHING DIALOGUES -----------\\
 //--------------------------------------------\\
@@ -24,4 +24,5 @@ func passDialogue() {
 func startingGame() {
     screenTitle()
     chooseMenu()
+}
 }

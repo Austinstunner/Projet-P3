@@ -7,6 +7,7 @@
 
 import Foundation
 
+extension Game {
 //-----------------------------------\\
 //----------- PLAYING MENU -----------\\
 //-------------------------------------\\
@@ -33,9 +34,11 @@ func play() {
     - King Mickey : Oh, i touth.. i'm sorry, precipitation makes me forget my manners ! i forgot to ask..
     What's the name of your squad ?
 
+    Player 1,
+
     """)
     
-    createNameOfTeamP1()
+    player1.createNameOfTheTeam()
     
     print("""
 
@@ -43,16 +46,18 @@ func play() {
     - Jiminy Cricket : That's right my King, i didn't bother to do some presentations ! Here are ... :
 
     """)
-    createP1()
+
+    player1.createTeams()
     passDialogue()
     
     print("""
     - King Mickey : Well ! So now, i send you on the Necropolis of keyblades for helping our friends !
     - Jiminy Cricket : just before you go be aware, i've heard that a squad name ...
 
+    Player 2,
     """)
     
-    createNameOfTeamP2()
+    player2.createNameOfTheTeam()
     
     print("""
 
@@ -61,7 +66,7 @@ func play() {
 
     """)
     
-    createP2()
+    player2.createTeams()
     passDialogue()
     
     print("""
@@ -83,4 +88,5 @@ func play() {
     
     passDialogue()
     runGame()
+}
 }

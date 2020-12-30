@@ -7,6 +7,7 @@
 
 import Foundation
 
+extension Game {
 //-------------------------------------------\\
 //---------------- SCREEN TITLE --------------\\
 //---------------------------------------------\\
@@ -20,3 +21,4 @@ KINGDOM HEARTS : BATTLE FOR THE HEART OF ALL WORLDS
     
 }
 
+}

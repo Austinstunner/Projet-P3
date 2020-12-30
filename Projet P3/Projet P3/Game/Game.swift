@@ -11,27 +11,38 @@ import Foundation
 //------------------------------------------ GAME ---------------------------------------\\
 //----------------------------------------------------------------------------------------\\
 
+class Game {
+    var round: Int = 1
+    let player1 = Player(nameOfTheTeam: "")
+    let player2 = Player(nameOfTheTeam: "")
+    let treasure = Treasure()
   // Start the Game and switch round between player 1 and 2
-var round: Int = 1
+
   func runGame() {
       var p1Lost = player1.hasLoose()
       var p2Lost = player2.hasLoose()
       while p1Lost == false && p2Lost == false {
-          if round % 2 == 1 {
+        var currentPlayer = player1
+        
+        if round % 2 == 1 {
               print("""
-                                [\(player1.nameOfTheTeam)] it's your turn
+                                [\(currentPlayer.nameOfTheTeam)] it's your turn
                     """)
-              player1.fight(target: player2)
-          } else if round % 2 == 0 {
+              currentPlayer.fight(target: player2)
+          } else {
+            currentPlayer = player2
               print("""
-                                [\(player2.nameOfTheTeam)] it's your turn
+                                [\(currentPlayer.nameOfTheTeam)] it's your turn
                     """)
-              player2.fight(target: player1)
+              currentPlayer.fight(target: player1)
           }
+        
           round += 1
+        
           p1Lost = player1.hasLoose()
           p2Lost = player2.hasLoose()
       }
+    
       endGame()
     statistic()
   }
@@ -56,6 +67,7 @@ func endGame() {
             Party is over after \(round) round.
             The winner is \(player1.nameOfTheTeam)'s team !
             """)
+       
+        }
     }
 }
-
