@@ -1,5 +1,5 @@
 //
-//  Menu.swift
+//  Game+StartingGame.swift
 //  Projet P3
 //
 //  Created by Anthony TUFFERY on 22/11/2020.
@@ -24,5 +24,5 @@ func passDialogue() {
 func startingGame() {
     screenTitle()
     chooseMenu()
-}
+    }
 }

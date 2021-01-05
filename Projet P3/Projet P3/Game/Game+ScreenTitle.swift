@@ -14,7 +14,7 @@ extension Game {
 
 func screenTitle() {
     print("""
-KINGDOM HEARTS : BATTLE FOR THE HEART OF ALL WORLDS
+        KINGDOM HEARTS : BATTLE FOR THE HEART OF ALL WORLDS
 
 """
     )

@@ -11,8 +11,8 @@ import Foundation
 //-----------  -----------\\
 //--------------------------------------------------------------\\
 
-class Shield: Weapon {
+final class Shield: Weapon {
     init() {
-        super.init(name: "Classic Shield", type: "Shield", damage: 25, definition: "a solid shield marked by the king's insign")
+        super.init(name: "Classic Shield", type: "Shield", damage: 23, definition: "a solid shield marked by the king's insign")
     }
 }

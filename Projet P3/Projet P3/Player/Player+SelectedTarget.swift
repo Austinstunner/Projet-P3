@@ -9,7 +9,7 @@ import Foundation
 
 extension Player {
     //-- Select a target of other player to fight
-    func selectedTarget(target: Player) -> Character {
+   internal func selectedTarget(target: Player) -> Character {
         print("")
         print("""
             Select your opponent
@@ -26,8 +26,13 @@ extension Player {
         
         if let value = readLine(), let choice = Int(value), choice <= target.characters.count - 1 {
             let selectATarget = target.characters[choice]
-            print("▶️ \(selectATarget.name) was selected !")
-            print("")
+            print("""
+
+
+                ▶️ \(selectATarget.name) was selected !
+
+                """)
+           
             if selectATarget.isDead() {
                 print("Hum ! Sorry but he's already dead, please choose another one !")
                 return selectedTarget(target: target)

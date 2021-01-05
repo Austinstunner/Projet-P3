@@ -11,7 +11,7 @@ import Foundation
 //-----------  -----------\\
 //--------------------------------------------------------\\
 
-class RoyalSorcerer: Character {
+final class RoyalSorcerer: Character {
     init() {
         super.init(name: "", life: 100, weapon: Wand(), heal: 30)
     }

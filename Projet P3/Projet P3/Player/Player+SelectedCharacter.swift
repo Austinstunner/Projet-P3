@@ -9,10 +9,11 @@ import Foundation
 
 extension Player {
     //-- function for select character of the team
-    func selectedCharacter(target: Player) -> Character {
+   
+    internal func selectedCharacter(target: Player) -> Character {
             print("")
             print("""
-                    Select a character ❕
+                            Select a character ❕
 
                     """)
             
@@ -20,7 +21,7 @@ extension Player {
             for (index, character) in characters.enumerated() {
                 let currentLife = character.life
                 
-                if currentLife == 100 {
+                if currentLife >= 100 {
                     print("[\(index)] ⚜️ \(character.name) has \(character.life) PV, He is fine.. ")
                 } else if currentLife >= 75 {
                     print("[\(index)] ⚜️ \(character.name) has \(character.life) PV, He has a few scratches but is in a good shape  ")

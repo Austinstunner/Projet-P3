@@ -11,7 +11,7 @@ import Foundation
 //-----------  ----------\\
 //------------------------------------------------------\\
 
-class PhysicalAttack: Weapon {
+final class PhysicalAttack: Weapon {
     init() {
         super.init(name: "Claws", type: "Physical attack", damage: 35, definition: "claws sharper than a knife")
     }

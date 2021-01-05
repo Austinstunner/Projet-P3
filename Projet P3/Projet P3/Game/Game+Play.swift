@@ -12,12 +12,12 @@ extension Game {
 //----------- PLAYING MENU -----------\\
 //-------------------------------------\\
 
-func play() {
+internal func play() {
    print("""
 
 
 
-    - Jiminy Cricket : My king, i fear that Xehanort's army was too big for Sora, Donald and Goofy.. We have to send another
+    - Jiminy Cricket : My king, i'm fear that Xehanort's army was too big for Sora, Donald and Goofy.. We have to send another
     squad as reinforcement
     - King Mickey : Hmm.. I see, were you thinking of a specific squad my dear Jiminy ?
     - Jiminy Cricket : Yes ! And i have ever call them, they're waiting behind the door.
@@ -34,7 +34,7 @@ func play() {
     - King Mickey : Oh, i touth.. i'm sorry, precipitation makes me forget my manners ! i forgot to ask..
     What's the name of your squad ?
 
-    Player 1,
+    Player 1...
 
     """)
     
@@ -54,7 +54,7 @@ func play() {
     - King Mickey : Well ! So now, i send you on the Necropolis of keyblades for helping our friends !
     - Jiminy Cricket : just before you go be aware, i've heard that a squad name ...
 
-    Player 2,
+    Player 2...
     """)
     
     player2.createNameOfTheTeam()

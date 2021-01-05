@@ -9,11 +9,14 @@ import Foundation
 
 extension Player {
    
-    func createCharacter() {
+   internal func createCharacter() {
         
         print("""
             
-            [1]🗝 Keyblade Wielder [2]🧙🏻‍♂️ Royal Sorcecer [3]💂🏻 Royal Defender [4]🧟 Monster
+            [1]🗝 Keyblade Wielder
+            [2]🧙🏻‍♂️ Royal Sorcecer
+            [3]💂🏻 Royal Defender
+            [4]🧟 Monster
 
             """)
         if let choix = readLine() {

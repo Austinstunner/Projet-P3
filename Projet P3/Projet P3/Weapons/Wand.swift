@@ -11,8 +11,8 @@ import Foundation
 //-----------  -----------\\
 //------------------------------------------------------------\\
 
-class Wand: Weapon {
+final class Wand: Weapon {
     init() {
-        super.init(name: "Classic Wand", type: "Wand", damage: 25, definition: "a magic wand marked by the king's insign")
+        super.init(name: "Classic Wand", type: "Wand", damage: 23, definition: "a magic wand marked by the king's insign")
     }
 }

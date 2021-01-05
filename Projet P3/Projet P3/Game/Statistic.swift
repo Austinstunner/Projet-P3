@@ -13,7 +13,7 @@ import Foundation
 
 extension Game {
     
-func statistic() {
+internal func statistic() {
     print("""
     
     STATS OF THE GAME
@@ -29,9 +29,6 @@ func statistic() {
     \(player1.characters[2].name) :
     life remaining : \(player1.characters[2].life)
     
-
-    
-
     
             \(player2.nameOfTheTeam)
 

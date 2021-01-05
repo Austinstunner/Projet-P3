@@ -23,26 +23,7 @@ class Character {
         self.life = life
         self.weapon = weapon
         self.heal = heal
-        }
-    func isDead() -> Bool {
-        return life <= 0
     }
-    
-    func attack(target: Character, weapon: Weapon) {
-           target.life -= weapon.damage
-           print("""
-            ⚔️ \(self.name) remove \(weapon.damage) of \(target.name)'s PV !
+}
 
-            """)
-       }
-    func healing(partner: Character, target: Character, weapon: Weapon) {
-            partner.life += self.heal
-                if partner.life >= 100 {
-                    partner.life = 100
-                    print("❤️✨\(partner.name) healed \(target.name) and he is in top form !")
-                } else {
-                    print("❤️✨\(partner.name) healed \(target.name) for \(self.heal) PV ! ")
-                }
-            }
-    }
    

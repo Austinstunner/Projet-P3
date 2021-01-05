@@ -11,7 +11,7 @@ import Foundation
 //----------- CLASS WEAPON -----------\\
 //-------------------------------------\\
 
-class Weapon {
+internal class Weapon {
     var name: String = ""
     var type: String = ""
     var damage: Int = 0

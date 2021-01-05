@@ -9,7 +9,7 @@ import Foundation
 
 extension Player {
     //-- define the end of a team
-    func hasLoose() -> Bool {
+   internal func hasLoose() -> Bool {
             if characters[0].isDead() && characters[1].isDead() && characters[2].isDead() {
                 return true
             } else {

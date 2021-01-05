@@ -11,7 +11,7 @@ import Foundation
 //-----------  -----------\\
 //----------------------------------------------------------\\
 
-class Monster: Character {
+final class Monster: Character {
     init() {
         super.init(name: "", life: 110, weapon: PhysicalAttack(), heal: 10)
     }

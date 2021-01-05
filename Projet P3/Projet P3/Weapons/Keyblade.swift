@@ -11,8 +11,8 @@ import Foundation
 //-----------  -----------\\
 //--------------------------------------------------------\\
 
-class Keyblade: Weapon {
+final class Keyblade: Weapon {
     init() {
-        super.init(name: "Classic Keyblade", type: "Keyblade", damage: 35, definition: "a beautiful and powerfull Keyblade")
+        super.init(name: "Classic Keyblade", type: "Keyblade", damage: 20, definition: "a beautiful and powerfull Keyblade")
     }
 }

@@ -9,16 +9,27 @@ import Foundation
 
 extension Player {
     
-    //--- Fight menu for character selected
-    func fight(target: Player) {
+   internal func fight(target: Player) {
+    
             let currentPlayer = selectedCharacter(target: target)
             
                 print("""
-                                              🚩\(currentPlayer.name)🚩
-                            
-                                    [1] Attack           [2] Heal
+                                            🚩\(currentPlayer.name)🚩
+
+                    life : \(currentPlayer.life)
+                    Weapon : \(currentPlayer.weapon.name)
+
+
+                                             
+                            [1] Attack                           [2] Heal
+
+
                     
-                    Other keys makes you return to the character's selecting menu.
+                            
+
+
+
+                            Tip another Keys to return to character's menu
 
                     """)
                 
@@ -44,5 +55,4 @@ extension Player {
                 currentPlayer.attack(target: currentTarget, weapon: currentPlayer.weapon)
             }
         }
-
 }

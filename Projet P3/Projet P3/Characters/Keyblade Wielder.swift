@@ -11,8 +11,8 @@ import Foundation
 //-----------  -----------\\
 //------------------------------------------------------\\
 
-class KeybladeWielder: Character {
+final class KeybladeWielder: Character {
     init() {
-        super.init(name: "", life: 125, weapon: Keyblade(), heal: 18)
+        super.init(name: "", life: 125, weapon: Keyblade(), heal: 25)
     }
 }

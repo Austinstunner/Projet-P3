@@ -9,11 +9,11 @@ import Foundation
 
 extension Player {
     
-    func createNameOfTheTeam() {
+   internal func createNameOfTheTeam() {
             print("""
-         _______________________________
-        ⎮Choose the name of your team : ⎮
-         -------------------------------
+         
+        ⚜️ Choose the name of your team ⚜️
+         
 
         """)
         nameOfTheTeam = readLine()!

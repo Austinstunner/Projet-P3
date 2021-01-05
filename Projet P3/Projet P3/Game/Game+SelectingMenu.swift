@@ -12,13 +12,15 @@ extension Game {
 //----------- SELECTING MENU OF SCREEN TITLE -----------\\
 //-------------------------------------------------------\\
 
-func chooseMenu() {
+internal func chooseMenu() {
     print("""
 
-                        Choose an option :
+                                Choose an option :
 
 
-        [1] Play                   [2] Rules                  [3] Lore
+        [1] Play                                                      [3] Lore
+        [2] Rules                                                     [4] Glossary
+        
 
         """)
     
@@ -30,7 +32,9 @@ func chooseMenu() {
                 You're going to enter on the world of Kingdom Hearts,
                                     Continue ?
 
-                    [1] Yes !                     [2] No, let me some times !
+
+
+                [1] Yes !                     [2] No, let me some times !
                 """)
             if let info = readLine() {
                 switch info {
@@ -50,12 +54,23 @@ func chooseMenu() {
         case "2":
             rules()
             passDialogue()
+            print("""
+                
+                
+                """)
             chooseMenu()
             
         case "3":
-            entrance()
+            lore()
             passDialogue()
+            print("""
+                
+                
+                """)
             chooseMenu()
+            
+        case "4":
+            glossary()
             
         default:
             print("I don't understand")

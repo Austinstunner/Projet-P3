@@ -9,13 +9,11 @@
 //-----------CLASS PLAYER-----------\\
 //-----------------------------------\\
 
-class Player {
+final class Player {
     var nameOfTheTeam: String
     var characters = [Character]()
-    
     init(nameOfTheTeam: String) {
         self.nameOfTheTeam = nameOfTheTeam
     }
     
 }
-
