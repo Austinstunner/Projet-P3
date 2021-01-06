@@ -18,7 +18,7 @@ extension Player {
         
         for (index, character) in target.characters.enumerated() {
             if character.isDead() {
-                print("\(character.name) can't be a target, he is dead !")
+                print("❌ \(character.name) can't be a target, he is dead !")
             } else {
                 print("➡️ \(index) \(character.name) has \(character.life) PV." )
             }
