@@ -7,12 +7,11 @@
 
 import Foundation
 
-//------------------------------------------------------------\\
-//-----------  -----------\\
-//--------------------------------------------------------------\\
+
+//-- Class Shield inherited from the Class Weapon
 
 final class Shield: Weapon {
     init() {
-        super.init(name: "Classic Shield", type: "Shield", damage: 23, definition: "a solid shield marked by the king's insign")
+        super.init(name: "Classic Shield", type: "Shield", damage: 31, definition: "a solid shield marked by the king's insign")
     }
 }

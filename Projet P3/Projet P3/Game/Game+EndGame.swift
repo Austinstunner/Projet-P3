@@ -8,8 +8,8 @@
 import Foundation
 
 extension Game {
-    // End Game : display an ending message and show statistics for each one when a player loose.
-    internal func endGame() {
+    //-- function End Game for the end of a party, with conditions.
+    func endGame() {
         print("🎮 End Game")
         if player1.hasLoose() {
             print("""
@@ -23,7 +23,7 @@ extension Game {
                 Party is over after \(round) round.
                 The winner is \(player1.nameOfTheTeam)'s team !
                 """)
-           
-            }
+            
         }
+    }
 }

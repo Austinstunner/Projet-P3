@@ -7,9 +7,7 @@
 
 import Foundation
 
-//--------------------------------------------------------\\
-//-----------  -----------\\
-//----------------------------------------------------------\\
+//-- Class Monster inherited from the Class Character
 
 final class Monster: Character {
     init() {

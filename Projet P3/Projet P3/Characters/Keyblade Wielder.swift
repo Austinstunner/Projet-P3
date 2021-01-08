@@ -7,9 +7,7 @@
 
 import Foundation
 
-//----------------------------------------------------\\
-//-----------  -----------\\
-//------------------------------------------------------\\
+//-- Class KeybladeWielder inherited from the Class Character
 
 final class KeybladeWielder: Character {
     init() {

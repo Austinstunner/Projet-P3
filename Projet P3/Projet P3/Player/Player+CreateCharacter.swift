@@ -8,8 +8,10 @@
 import Foundation
 
 extension Player {
-   
-   internal func createCharacter() {
+    
+    //Function who's create characters for teams, with multiple choices and naming 
+    
+   func createCharacter() {
         
         print("""
             

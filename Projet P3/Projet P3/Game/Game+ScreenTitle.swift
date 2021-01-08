@@ -8,17 +8,15 @@
 import Foundation
 
 extension Game {
-//-------------------------------------------\\
-//---------------- SCREEN TITLE --------------\\
-//---------------------------------------------\\
 
-func screenTitle() {
-    print("""
+//-- Function who's display Screen Title
+    func screenTitle() {
+        print("""
         KINGDOM HEARTS : BATTLE FOR THE HEART OF ALL WORLDS
 
 """
-    )
+        )
+        
+    }
     
-}
-
 }

@@ -8,12 +8,14 @@
 import Foundation
 
 extension Player {
-    //-- define the end of a team
-   internal func hasLoose() -> Bool {
-            if characters[0].isDead() && characters[1].isDead() && characters[2].isDead() {
-                return true
-            } else {
-                return false
-            }
+    
+    //-- Function that return a boolean in terms of all the characters of a team is unvailable. 
+    
+    func hasLoose() -> Bool {
+        if characters[0].isDead() && characters[1].isDead() && characters[2].isDead() {
+            return true
+        } else {
+            return false
         }
+    }
 }

@@ -9,11 +9,13 @@ import Foundation
 
 extension Player {
     
-   internal func fight(target: Player) {
+    //-- Function fight of the game, with multiple choices
     
-            let currentPlayer = selectedCharacter(target: target)
-            
-                print("""
+    func fight(target: Player) {
+        
+        let currentPlayer = selectedCharacter(target: target)
+        
+        print("""
                                             🚩\(currentPlayer.name)🚩
 
                     life : \(currentPlayer.life)
@@ -32,27 +34,27 @@ extension Player {
                             Tip another Keys to return to character's menu
 
                     """)
+        
+        if let options = readLine() {
+            switch options {
+            case "1":
                 
-                if let options = readLine() {
-                    switch options {
-                    case "1":
-                       
-                        let currentTarget = selectedTarget(target: target)
-                        currentPlayer.attack(target: currentTarget, weapon: currentPlayer.weapon)
-                    case "2":
-                   
-                        let currentTarget = selectedTarget(target: self)
-                        currentPlayer.healing(partner: currentPlayer, target: currentTarget, weapon: currentPlayer.weapon)
-                    default:
-                        print("""
-                        I don't understand, repeat please ?
-                        """)
-                        fight(target: target)
-                    }
-                }
-             else {
                 let currentTarget = selectedTarget(target: target)
                 currentPlayer.attack(target: currentTarget, weapon: currentPlayer.weapon)
+            case "2":
+                
+                let currentTarget = selectedTarget(target: self)
+                currentPlayer.healing(partner: currentPlayer, target: currentTarget, weapon: currentPlayer.weapon)
+            default:
+                print("""
+                        I don't understand, repeat please ?
+                        """)
+                fight(target: target)
             }
         }
+        else {
+            let currentTarget = selectedTarget(target: target)
+            currentPlayer.attack(target: currentTarget, weapon: currentPlayer.weapon)
+        }
+    }
 }

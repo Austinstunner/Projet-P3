@@ -5,9 +5,7 @@
 //  Created by Anthony TUFFERY on 22/11/2020.
 //
 
-//---------------------------------\\
-//-----------CLASS PLAYER-----------\\
-//-----------------------------------\\
+//-- Class Player
 
 final class Player {
     var nameOfTheTeam: String

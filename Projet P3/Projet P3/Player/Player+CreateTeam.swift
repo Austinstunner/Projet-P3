@@ -9,7 +9,9 @@ import Foundation
 
 extension Player {
     
-    internal func createTeams() {
+    //-- Function who's create two teams with three characters
+    
+    func createTeams() {
         print("""
                          
                         1️⃣ ⚜️ Select the first character of your team ⚜️

@@ -8,12 +8,10 @@
 import Foundation
 
 extension Game {
-//-----------------------------------------------------\\
-//----------- SELECTING MENU OF SCREEN TITLE -----------\\
-//-------------------------------------------------------\\
-
-internal func chooseMenu() {
-    print("""
+    //-- function who describe the main menu, with choices.
+    
+    func chooseMenu() {
+        print("""
 
                                 Choose an option :
 
@@ -23,11 +21,11 @@ internal func chooseMenu() {
         
 
         """)
-    
-    if let choise = readLine() {
-        switch choise {
-        case "1":
-            print("""
+        
+        if let choice = readLine() {
+            switch choice {
+            case "1":
+                print("""
 
                 You're going to enter on the world of Kingdom Hearts,
                                     Continue ?
@@ -36,47 +34,47 @@ internal func chooseMenu() {
 
                 [1] Yes !                     [2] No, let me some times !
                 """)
-            if let info = readLine() {
-                switch info {
-                case "1":
-                    play()
-                case "2":
-                    chooseMenu()
-                default:
-                    print("Huh ? Your dissent forces me to punish you ! Go back to the beginning !")
-                    passDialogue()
-                    chooseMenu()
-                    
-                    
+                if let info = readLine() {
+                    switch info {
+                    case "1":
+                        play()
+                    case "2":
+                        chooseMenu()
+                    default:
+                        print("Huh ? Your dissent forces me to punish you ! Go back to the beginning !")
+                        passDialogue()
+                        chooseMenu()
+                        
+                        
+                    }
                 }
+                
+            case "2":
+                rules()
+                passDialogue()
+                print("""
+                
+                
+                """)
+                chooseMenu()
+                
+            case "3":
+                lore()
+                passDialogue()
+                print("""
+                
+                
+                """)
+                chooseMenu()
+                
+            case "4":
+                glossary()
+                
+            default:
+                print("I don't understand")
+                chooseMenu()
             }
-            
-        case "2":
-            rules()
-            passDialogue()
-            print("""
-                
-                
-                """)
-            chooseMenu()
-            
-        case "3":
-            lore()
-            passDialogue()
-            print("""
-                
-                
-                """)
-            chooseMenu()
-            
-        case "4":
-            glossary()
-            
-        default:
-            print("I don't understand")
-            chooseMenu()
         }
     }
-}
-
+    
 }

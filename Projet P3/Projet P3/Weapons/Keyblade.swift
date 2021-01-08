@@ -7,12 +7,10 @@
 
 import Foundation
 
-//------------------------------------------------------\\
-//-----------  -----------\\
-//--------------------------------------------------------\\
+//-- Class Keyblade inherited from the Class Weapon
 
 final class Keyblade: Weapon {
     init() {
-        super.init(name: "Classic Keyblade", type: "Keyblade", damage: 20, definition: "a beautiful and powerfull Keyblade")
+        super.init(name: "Classic Keyblade", type: "Keyblade", damage: 30, definition: "a beautiful and powerfull Keyblade")
     }
 }

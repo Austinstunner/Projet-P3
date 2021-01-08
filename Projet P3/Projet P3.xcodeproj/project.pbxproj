@@ -188,8 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				89B332BF25673D8E00681BDF /* Player.swift */,
-				89D1376F259C9D620087B491 /* Player+CreateNameOfTheTeam.swift */,
 				89D1375E259264870087B491 /* Player+CreateTeam.swift */,
+				89D1376F259C9D620087B491 /* Player+CreateNameOfTheTeam.swift */,
 				89D13772259C9D930087B491 /* Player+CreateCharacter.swift */,
 				89D13763259C9CCB0087B491 /* Player+SelectedCharacter.swift */,
 				89D13769259C9D290087B491 /* Player+SelectedTarget.swift */,

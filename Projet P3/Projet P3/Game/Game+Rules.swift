@@ -8,13 +8,12 @@
 import Foundation
 
 extension Game {
-//--------------------------------------\\
-//----------- GAME RULES MENU -----------\\
-//----------------------------------------\\
-
-internal func rules() {
     
-    print("""
+//-- function who's display rules of the game
+    
+    func rules() {
+        
+        print("""
 
         You enter in the world of Kingdom Hearts.
 
@@ -35,5 +34,5 @@ internal func rules() {
 
         
         """)
-}
+    }
 }

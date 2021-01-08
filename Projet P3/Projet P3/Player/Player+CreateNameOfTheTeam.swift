@@ -9,8 +9,10 @@ import Foundation
 
 extension Player {
     
-   internal func createNameOfTheTeam() {
-            print("""
+    //-- Function who's create the name of player's team
+    
+    func createNameOfTheTeam() {
+        print("""
          
         ⚜️ Choose the name of your team ⚜️
          

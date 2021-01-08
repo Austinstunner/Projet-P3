@@ -7,22 +7,20 @@
 
 import Foundation
 extension Game {
-//------------------------------------------\\
-//----------- SWITCHING DIALOGUES -----------\\
-//--------------------------------------------\\
-func passDialogue() {
-    print("Press enter to continue..")
-    
-    if readLine() != nil {
+    //------------------------------------------\\
+    //----------- SWITCHING DIALOGUES -----------\\
+    //--------------------------------------------\\
+    func passDialogue() {
+        print("Press enter to continue..")
         
+        if readLine() != nil {
+            
+        }
     }
-}
-//-----------------------------------------------\\
-//----------- ACTION OF STARTING MENU ------------\\
-//-------------------------------------------------\\
-
-func startingGame() {
-    screenTitle()
-    chooseMenu()
+  
+//-- Function who's init the game
+    func startingGame() {
+        screenTitle()
+        chooseMenu()
     }
 }

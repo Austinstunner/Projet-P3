@@ -7,9 +7,7 @@
 
 import Foundation
 
-//--------------------------------------\\
-//----------- CLASS CHARACTER -----------\\
-//----------------------------------------\\
+//-- Class Character
 
 class Character {
     var name: String = ""
@@ -26,4 +24,4 @@ class Character {
     }
 }
 
-   
+

@@ -7,9 +7,7 @@
 
 import Foundation
 
-//----------------------------------------------------\\
-//-----------  ----------\\
-//------------------------------------------------------\\
+//-- Class PhysicalAttack inherited from the Class Weapon
 
 final class PhysicalAttack: Weapon {
     init() {

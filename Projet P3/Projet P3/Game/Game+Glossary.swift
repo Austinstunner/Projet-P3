@@ -9,9 +9,11 @@ import Foundation
 
 extension Game {
     
+    //-- function who's display glossary of the game
+    
     func glossary() {
         
-    print("""
+        print("""
                             Welcome in the Glossary of the game !
         
         Here you can learn more about characters, items or history from the Kingdom Hearts's licence.
@@ -160,10 +162,10 @@ extension Game {
                 """)
                 passDialogue()
                 glossary()
-           
+                
             case"11":
-              chooseMenu()
-            
+                chooseMenu()
+                
             default:
                 print("""
                     

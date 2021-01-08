@@ -7,12 +7,11 @@
 
 import Foundation
 
-//----------------------------------------------------------\\
-//-----------  -----------\\
-//------------------------------------------------------------\\
+
+//-- Class Wand inherited from the Class Weapon
 
 final class Wand: Weapon {
     init() {
-        super.init(name: "Classic Wand", type: "Wand", damage: 23, definition: "a magic wand marked by the king's insign")
+        super.init(name: "Classic Wand", type: "Wand", damage: 33, definition: "a magic wand marked by the king's insign")
     }
 }

@@ -8,12 +8,14 @@
 import Foundation
 
 extension Character {
-   
+    
+    //-- Function attack of characters, with target
+    
     func attack(target: Character, weapon: Weapon) {
-           target.life -= weapon.damage
-           print("""
+        target.life -= weapon.damage
+        print("""
             ⚔️ \(self.name) remove \(weapon.damage) of \(target.name)'s PV !
 
             """)
-       }
+    }
 }

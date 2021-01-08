@@ -7,9 +7,7 @@
 
 import Foundation
 
-//--------------------------------------------------------------------------------------\\
-//------------------------------------------ GAME ---------------------------------------\\
-//----------------------------------------------------------------------------------------\\
+//-- Class Game
 
 final class Game {
     var round: Int = 1
@@ -49,10 +47,13 @@ final class Game {
           round += 1
         
         let randomOn100 = arc4random_uniform(100)
-        let getChara = Int.random(in: 0..<currentPlayer.characters.count)
-        let getSecret = secretWeapon.chooseWeaponRandomly()
+        
         
         if randomOn100 > 50 {
+            
+            let getChara = Int.random(in: 0..<currentPlayer.characters.count)
+            let getSecret = secretWeapon.chooseWeaponRandomly()
+            
             if currentPlayer.characters[getChara].isDead() == false{
 
             print("A chest appear near \(currentPlayer.nameOfTheTeam)'s team...")
@@ -70,3 +71,4 @@ final class Game {
     statistic()
   }
 }
+

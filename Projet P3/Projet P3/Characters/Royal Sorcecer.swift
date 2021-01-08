@@ -7,9 +7,7 @@
 
 import Foundation
 
-//------------------------------------------------------\\
-//-----------  -----------\\
-//--------------------------------------------------------\\
+//-- Class RoyalSorcerer inherited from the Class Character
 
 final class RoyalSorcerer: Character {
     init() {

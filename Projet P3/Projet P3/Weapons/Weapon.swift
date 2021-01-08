@@ -7,11 +7,9 @@
 
 import Foundation
 
-//-----------------------------------\\
-//----------- CLASS WEAPON -----------\\
-//-------------------------------------\\
+//-- Class Weapon
 
-internal class Weapon {
+class Weapon {
     var name: String = ""
     var type: String = ""
     var damage: Int = 0

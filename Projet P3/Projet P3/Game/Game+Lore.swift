@@ -8,13 +8,15 @@
 import Foundation
 
 extension Game {
-//-------------------------------------------\\
-//----------- ENTRANCE OF THE GAME -----------\\
-//---------------------------------------------\\
-
-func lore() {
+    //-------------------------------------------\\
+    //----------- ENTRANCE OF THE GAME -----------\\
+    //---------------------------------------------\\
     
-    print("""
+    func lore() {
+        
+        //-- function who's display lore of the game
+        
+        print("""
 •----------------------------------------------------------------------------------------------------•
 ⎮             The Kingdom Hearts lead the peace of kingdoms of the original world.                   ⎮
 ⎮                                                                                                    ⎮

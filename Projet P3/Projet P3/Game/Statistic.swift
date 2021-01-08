@@ -13,11 +13,15 @@ import Foundation
 
 extension Game {
     
-internal func statistic() {
-    print("""
+    //-- Function for the stats of the current game
+    func statistic() {
+        print("""
     
     STATS OF THE GAME
     -----------------
+        
+    Game over after \(round)
+
             \(player1.nameOfTheTeam)
     
     \(player1.characters[0].name) :
@@ -42,5 +46,5 @@ internal func statistic() {
     life remaining : \(player2.characters[2].life)
     
     """)
-}
+    }
 }
