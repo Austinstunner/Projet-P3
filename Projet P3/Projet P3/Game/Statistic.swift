@@ -20,9 +20,9 @@ extension Game {
     STATS OF THE GAME
     -----------------
         
-    Game over after \(round)
+    Game over after \(round) rounds
 
-            \(player1.nameOfTheTeam)
+            🔴\(player1.nameOfTheTeam)
     
     \(player1.characters[0].name) :
     life remaining : \(player1.characters[0].life)
@@ -34,7 +34,7 @@ extension Game {
     life remaining : \(player1.characters[2].life)
     
     
-            \(player2.nameOfTheTeam)
+            🔵\(player2.nameOfTheTeam)
 
     \(player2.characters[0].name) :
     life remaining : \(player2.characters[0].life)

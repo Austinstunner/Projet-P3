@@ -169,7 +169,7 @@ extension Game {
             default:
                 print("""
                     
-                    ⚠️ I'm sorry, i don't recognize what you wrote, try again ⚠️w
+                    ⚠️ I'm sorry, i don't recognize what you wrote, try again ⚠️
 
                 """)
                 glossary()

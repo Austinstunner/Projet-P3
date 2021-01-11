@@ -28,7 +28,7 @@ extension Game {
             ➢ Attack : choose one of opponent's character to attack.
             ➢ Heal : choose one of your character to heal.
         
-        The end of the game is announced when all characters of a player is dead, a winner is designated and
+        The end of the game is announced when all characters of a player are dead, a winner is designated and
         statistics of the game is displayed.
         
 
