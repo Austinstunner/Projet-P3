@@ -10,3 +10,4 @@ import Foundation
 //-- var game = Game()
 var game = Game()
 game.startingGame()
+
